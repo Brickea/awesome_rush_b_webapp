@@ -9,6 +9,14 @@ public class User {
     private String username;
     private String email;
     private String password;
-    private List<Article> articleList;
-    private int id;
+    private List<Blog> blogList;
+    private String userId;
+
+    public void deleteArticle(Blog blog){
+        blogList.remove(blog);
+    }
+
+    public void addArticle(Blog blog){
+        blogList.add(blog);
+    }
 }
